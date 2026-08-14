@@ -1,8 +1,14 @@
 {
     "name": "nsrc-flex-scheduler",
-    "description": "web based flex radio scheduler",
+    "description": "web based flex radio scheduler-node-red-code",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "@colinl/node-red-dashboard-2-ui-gauge-classic": "1.4.0",
+        "@flowfuse/node-red-dashboard": "1.30.2",
+        "node-red-contrib-string": "1.0.0",
+        "node-red-contrib-unit-converter": "0.0.3",
+        "node-red-dashboard": "3.6.6"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",
