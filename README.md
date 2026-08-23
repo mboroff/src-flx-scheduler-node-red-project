@@ -75,16 +75,3 @@ A system health tab for the Raspberry Pi hosting Node-RED, showing:
 - Disk usage (`df -h`)
 - The Pi's local IP address(es)
 
-These are displayed as dashboard gauges/text, refreshed on inject/interval.
-
-### Dependencies
-
-Defined in `package.json`:
-- `@flowfuse/node-red-dashboard` / `node-red-dashboard` — the web dashboard UI
-- `@colinl/node-red-dashboard-2-ui-gauge-classic` — classic-style gauges used on the Pi monitoring tab
-- `node-red-contrib-string` — string parsing (e.g. extracting IP addresses)
-- `node-red-contrib-unit-converter` — unit conversion used by the monitoring gauges
-
-### Notes
-
-The flow also contains a couple of empty/placeholder tabs ("Flow 1", "Flow 2") left over from development, which can be cleaned up or repurposed.
