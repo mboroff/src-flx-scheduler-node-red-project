@@ -1,21 +1,5 @@
 [
     {
-        "id": "08c395fd888e93e3",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "34f3b5f18812163a",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "8e06cc4cf6b55eab",
         "type": "tab",
         "label": "Flow 1",
@@ -790,7 +774,8 @@
         "wires": [
             [
                 "ae892c8ad09f9c3c",
-                "973883b003b9a558"
+                "973883b003b9a558",
+                "c0ba3f936cc5fbb6"
             ]
         ]
     },
@@ -956,6 +941,35 @@
         ]
     },
     {
+        "id": "c6d12efe280faa34",
+        "type": "link in",
+        "z": "52514ed31cfbdeca",
+        "name": "MunEndfed All In",
+        "links": [
+            "25762a697513e3be"
+        ],
+        "x": 35,
+        "y": 180,
+        "wires": [
+            [
+                "973883b003b9a558"
+            ]
+        ]
+    },
+    {
+        "id": "c0ba3f936cc5fbb6",
+        "type": "link out",
+        "z": "52514ed31cfbdeca",
+        "name": "MunEndfed All Button",
+        "mode": "link",
+        "links": [
+            "09917c09aecbefc7"
+        ],
+        "x": 225,
+        "y": 20,
+        "wires": []
+    },
+    {
         "id": "4c43a16227abee45",
         "type": "inject",
         "z": "f2640a39539df39d",
@@ -1020,7 +1034,8 @@
         "wires": [
             [
                 "fe9c5b73a7072b48",
-                "9bf5a6c02233fbb6"
+                "9bf5a6c02233fbb6",
+                "3f7b7b9a063f2041"
             ]
         ]
     },
@@ -1178,6 +1193,35 @@
         ]
     },
     {
+        "id": "3f7b7b9a063f2041",
+        "type": "link out",
+        "z": "f2640a39539df39d",
+        "name": "Skokie All Button",
+        "mode": "link",
+        "links": [
+            "20517d37f7f80762"
+        ],
+        "x": 345,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "04c1738a5532880e",
+        "type": "link in",
+        "z": "f2640a39539df39d",
+        "name": "Skokie All In",
+        "links": [
+            "ceafaa8a9eca1339"
+        ],
+        "x": 95,
+        "y": 380,
+        "wires": [
+            [
+                "fe9c5b73a7072b48"
+            ]
+        ]
+    },
+    {
         "id": "2d1499385179c7b4",
         "type": "inject",
         "z": "fd9a9d818b5e50e9",
@@ -1242,7 +1286,8 @@
         "wires": [
             [
                 "46206fe161a58459",
-                "8cba986d4b2333d7"
+                "8cba986d4b2333d7",
+                "be127631cda62188"
             ]
         ]
     },
@@ -1374,6 +1419,35 @@
         ]
     },
     {
+        "id": "be127631cda62188",
+        "type": "link out",
+        "z": "fd9a9d818b5e50e9",
+        "name": "Northbrook All Button",
+        "mode": "link",
+        "links": [
+            "21b884ba1a30859c"
+        ],
+        "x": 335,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5fa7dc28670174f8",
+        "type": "link in",
+        "z": "fd9a9d818b5e50e9",
+        "name": "Northbrook All In",
+        "links": [
+            "491dd85cb4feb3b2"
+        ],
+        "x": 125,
+        "y": 280,
+        "wires": [
+            [
+                "46206fe161a58459"
+            ]
+        ]
+    },
+    {
         "id": "eaecc0d6e9ad9ca8",
         "type": "inject",
         "z": "9b10ae1da2b9c2a4",
@@ -1392,7 +1466,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Not Available For activation",
+        "payload": "Available For activation",
         "payloadType": "str",
         "x": 220,
         "y": 114,
@@ -1436,7 +1510,11 @@
         "x": 202,
         "y": 178,
         "wires": [
-            []
+            [
+                "e83f68e4fe9235af",
+                "7f16abeab06e5a43",
+                "2e28889eb752d70b"
+            ]
         ]
     },
     {
@@ -1459,8 +1537,168 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 460,
-        "y": 120,
+        "x": 780,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e83f68e4fe9235af",
+        "type": "function",
+        "z": "9b10ae1da2b9c2a4",
+        "name": "Activating MunEndfed",
+        "func": "msg.payload = \"Activating - SmartLink will be available in 1 minute\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 380,
+        "wires": [
+            [
+                "50107f4845e37aec",
+                "c4ef06d5b2afe277"
+            ]
+        ]
+    },
+    {
+        "id": "50107f4845e37aec",
+        "type": "function",
+        "z": "9b10ae1da2b9c2a4",
+        "name": "Countdown",
+        "func": "if (context.get('timer')) {\n    clearInterval(context.get('timer'));\n    context.set('timer', null);\n}\n\nvar count = 55;\nnode.send([{ payload: \"SmartLink will be available in \" + count + \" seconds\" }, null]);\n\nvar timer = setInterval(function () {\n    count--;\n    if (count > 0) {\n        node.send([{ payload: \"SmartLink will be available in \" + count + \" seconds\" }, null]);\n    } else {\n        clearInterval(timer);\n        context.set('timer', null);\n        node.send([null, msg]);\n    }\n}, 1000);\n\ncontext.set('timer', timer);\nreturn null;",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "if (context.get('timer')) {\n    clearInterval(context.get('timer'));\n}",
+        "libs": [],
+        "x": 240,
+        "y": 460,
+        "wires": [
+            [
+                "c4ef06d5b2afe277"
+            ],
+            [
+                "2e76ba78aac4a683"
+            ]
+        ]
+    },
+    {
+        "id": "7f16abeab06e5a43",
+        "type": "mqtt out",
+        "z": "9b10ae1da2b9c2a4",
+        "name": "",
+        "topic": "Northfield/send",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "77639fb5dbcbebf1",
+        "x": 420,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2e76ba78aac4a683",
+        "type": "function",
+        "z": "9b10ae1da2b9c2a4",
+        "name": "MunEndfe Available",
+        "func": "msg.payload = \"SmartLink Available\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 540,
+        "wires": [
+            [
+                "c4ef06d5b2afe277"
+            ]
+        ]
+    },
+    {
+        "id": "7c1a4fee7f72583a",
+        "type": "inject",
+        "z": "9b10ae1da2b9c2a4",
+        "name": "Startup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Available for Activation                           ",
+        "payloadType": "str",
+        "x": 500,
+        "y": 400,
+        "wires": [
+            [
+                "c4ef06d5b2afe277"
+            ]
+        ]
+    },
+    {
+        "id": "01b911e1ad6b2cfd",
+        "type": "mqtt in",
+        "z": "9b10ae1da2b9c2a4",
+        "name": "MunEndfed/recv",
+        "topic": "Northfield/recv",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "77639fb5dbcbebf1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 640,
+        "y": 320,
+        "wires": [
+            [
+                "c4ef06d5b2afe277"
+            ]
+        ]
+    },
+    {
+        "id": "23702c3fc6f4cb32",
+        "type": "link in",
+        "z": "9b10ae1da2b9c2a4",
+        "name": "Northfield All",
+        "links": [
+            "fc0860b01b8f349c"
+        ],
+        "x": 95,
+        "y": 300,
+        "wires": [
+            [
+                "e83f68e4fe9235af"
+            ]
+        ]
+    },
+    {
+        "id": "2e28889eb752d70b",
+        "type": "link out",
+        "z": "9b10ae1da2b9c2a4",
+        "name": "Northfiled All Button",
+        "mode": "link",
+        "links": [
+            "293888ec26ab8946"
+        ],
+        "x": 405,
+        "y": 180,
         "wires": []
     },
     {
@@ -1501,8 +1739,8 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 600,
-        "y": 280,
+        "x": 580,
+        "y": 360,
         "wires": []
     },
     {
@@ -1518,7 +1756,7 @@
         "finalize": "",
         "libs": [],
         "x": 240,
-        "y": 140,
+        "y": 160,
         "wires": [
             [
                 "4ccb6007a82012b2",
@@ -1560,7 +1798,7 @@
         "finalize": "",
         "libs": [],
         "x": 180,
-        "y": 300,
+        "y": 360,
         "wires": [
             [
                 "e52dd9222a4b0da0"
@@ -1588,8 +1826,8 @@
         "topic": "",
         "payload": "Available for Activation                           ",
         "payloadType": "str",
-        "x": 420,
-        "y": 160,
+        "x": 400,
+        "y": 220,
         "wires": [
             [
                 "e52dd9222a4b0da0"
@@ -1609,8 +1847,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 560,
-        "y": 80,
+        "x": 540,
+        "y": 120,
         "wires": [
             [
                 "e52dd9222a4b0da0"
@@ -1653,6 +1891,36 @@
         "wires": [
             [
                 "29bfefedb7b5e53f",
+                "dee8cca4c549fbd3",
+                "df641c1666203fbe"
+            ]
+        ]
+    },
+    {
+        "id": "df641c1666203fbe",
+        "type": "link out",
+        "z": "fb245b14c25e1736",
+        "name": "MunAV640 All Button",
+        "mode": "link",
+        "links": [
+            "e12a3b80aaa8a8eb"
+        ],
+        "x": 285,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5b579f4947df14a4",
+        "type": "link in",
+        "z": "fb245b14c25e1736",
+        "name": "MunAV640 All In",
+        "links": [
+            "b5430da9a235e458"
+        ],
+        "x": 55,
+        "y": 100,
+        "wires": [
+            [
                 "dee8cca4c549fbd3"
             ]
         ]
@@ -1717,7 +1985,8 @@
         "wires": [
             [
                 "d04c7774ed3d65f9",
-                "a7f3d1faea1bdeb9"
+                "a7f3d1faea1bdeb9",
+                "25762a697513e3be"
             ]
         ]
     },
@@ -1894,10 +2163,39 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 120,
-        "y": 40,
+        "x": 250,
+        "y": 480,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "25762a697513e3be",
+        "type": "link out",
+        "z": "1a833e7e556e099d",
+        "name": "MundEndfed Single Button",
+        "mode": "link",
+        "links": [
+            "c6d12efe280faa34"
+        ],
+        "x": 365,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "09917c09aecbefc7",
+        "type": "link in",
+        "z": "1a833e7e556e099d",
+        "name": "MunEndfe Single In",
+        "links": [
+            "c0ba3f936cc5fbb6"
+        ],
+        "x": 45,
+        "y": 140,
+        "wires": [
+            [
+                "a7f3d1faea1bdeb9"
+            ]
         ]
     },
     {
@@ -1978,7 +2276,8 @@
         "wires": [
             [
                 "3ce19f16a9595b3a",
-                "c4526e7306ea80e2"
+                "c4526e7306ea80e2",
+                "b5430da9a235e458"
             ]
         ]
     },
@@ -2143,6 +2442,35 @@
         ]
     },
     {
+        "id": "b5430da9a235e458",
+        "type": "link out",
+        "z": "246d5812a8bb8b85",
+        "name": "MunAV640 Single Button",
+        "mode": "link",
+        "links": [
+            "5b579f4947df14a4"
+        ],
+        "x": 255,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e12a3b80aaa8a8eb",
+        "type": "link in",
+        "z": "246d5812a8bb8b85",
+        "name": "MunAV640 Single In",
+        "links": [
+            "df641c1666203fbe"
+        ],
+        "x": 105,
+        "y": 540,
+        "wires": [
+            [
+                "c4526e7306ea80e2"
+            ]
+        ]
+    },
+    {
         "id": "5169cc579c49c469",
         "type": "ui-template",
         "z": "fbd64501e7d55f1f",
@@ -2255,7 +2583,8 @@
         "wires": [
             [
                 "70dd539c50fbdd19",
-                "96f89f7aee52f37f"
+                "96f89f7aee52f37f",
+                "ceafaa8a9eca1339"
             ]
         ]
     },
@@ -2386,6 +2715,35 @@
         ]
     },
     {
+        "id": "20517d37f7f80762",
+        "type": "link in",
+        "z": "fbd64501e7d55f1f",
+        "name": "Skokie Single In",
+        "links": [
+            "3f7b7b9a063f2041"
+        ],
+        "x": 85,
+        "y": 500,
+        "wires": [
+            [
+                "96f89f7aee52f37f"
+            ]
+        ]
+    },
+    {
+        "id": "ceafaa8a9eca1339",
+        "type": "link out",
+        "z": "fbd64501e7d55f1f",
+        "name": "Skokie Single Button",
+        "mode": "link",
+        "links": [
+            "04c1738a5532880e"
+        ],
+        "x": 315,
+        "y": 240,
+        "wires": []
+    },
+    {
         "id": "3d8c2ddb9a409873",
         "type": "ui-template",
         "z": "2e5af763d4b55869",
@@ -2445,7 +2803,8 @@
         "wires": [
             [
                 "1e06c2e8f3499218",
-                "123c38bd27d74a55"
+                "123c38bd27d74a55",
+                "491dd85cb4feb3b2"
             ]
         ]
     },
@@ -2630,6 +2989,35 @@
         ]
     },
     {
+        "id": "21b884ba1a30859c",
+        "type": "link in",
+        "z": "2e5af763d4b55869",
+        "name": "Northbrook single IN",
+        "links": [
+            "be127631cda62188"
+        ],
+        "x": 85,
+        "y": 420,
+        "wires": [
+            [
+                "1e06c2e8f3499218"
+            ]
+        ]
+    },
+    {
+        "id": "491dd85cb4feb3b2",
+        "type": "link out",
+        "z": "2e5af763d4b55869",
+        "name": "Northbrook Single Button",
+        "mode": "link",
+        "links": [
+            "5fa7dc28670174f8"
+        ],
+        "x": 355,
+        "y": 140,
+        "wires": []
+    },
+    {
         "id": "8a5de3f57f7c9027",
         "type": "ui-template",
         "z": "a9c4f2a75d09e103",
@@ -2687,7 +3075,11 @@
         "x": 210,
         "y": 220,
         "wires": [
-            []
+            [
+                "6a109ea5859c4d84",
+                "f31a72353839787a",
+                "fc0860b01b8f349c"
+            ]
         ]
     },
     {
@@ -2710,8 +3102,8 @@
         "className": "",
         "value": "payload",
         "valueType": "msg",
-        "x": 360,
-        "y": 320,
+        "x": 640,
+        "y": 280,
         "wires": []
     },
     {
@@ -2733,10 +3125,10 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Not Available For activation",
+        "payload": "Available For activation",
         "payloadType": "str",
-        "x": 140,
-        "y": 300,
+        "x": 420,
+        "y": 200,
         "wires": [
             [
                 "08938a259b7b6408"
@@ -2766,6 +3158,164 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "6a109ea5859c4d84",
+        "type": "mqtt out",
+        "z": "a9c4f2a75d09e103",
+        "name": "",
+        "topic": "Northfield/send",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "77639fb5dbcbebf1",
+        "x": 320,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f31a72353839787a",
+        "type": "function",
+        "z": "a9c4f2a75d09e103",
+        "name": "Activating MunEndfed",
+        "func": "msg.payload = \"Activating - SmartLink will be available in 1 minute\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 620,
+        "wires": [
+            [
+                "54d02672f101778e",
+                "08938a259b7b6408"
+            ]
+        ]
+    },
+    {
+        "id": "54d02672f101778e",
+        "type": "function",
+        "z": "a9c4f2a75d09e103",
+        "name": "Countdown",
+        "func": "if (context.get('timer')) {\n    clearInterval(context.get('timer'));\n    context.set('timer', null);\n}\n\nvar count = 55;\nnode.send([{ payload: \"SmartLink will be available in \" + count + \" seconds\" }, null]);\n\nvar timer = setInterval(function () {\n    count--;\n    if (count > 0) {\n        node.send([{ payload: \"SmartLink will be available in \" + count + \" seconds\" }, null]);\n    } else {\n        clearInterval(timer);\n        context.set('timer', null);\n        node.send([null, msg]);\n    }\n}, 1000);\n\ncontext.set('timer', timer);\nreturn null;",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "if (context.get('timer')) {\n    clearInterval(context.get('timer'));\n}",
+        "libs": [],
+        "x": 140,
+        "y": 700,
+        "wires": [
+            [
+                "08938a259b7b6408"
+            ],
+            [
+                "86fb77103aaffd40"
+            ]
+        ]
+    },
+    {
+        "id": "86fb77103aaffd40",
+        "type": "function",
+        "z": "a9c4f2a75d09e103",
+        "name": "MunEndfe Available",
+        "func": "msg.payload = \"SmartLink Available\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 780,
+        "wires": [
+            [
+                "08938a259b7b6408"
+            ]
+        ]
+    },
+    {
+        "id": "359ec1a66e76cba0",
+        "type": "mqtt in",
+        "z": "a9c4f2a75d09e103",
+        "name": "Northfield/recv",
+        "topic": "Northfield/recv",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "77639fb5dbcbebf1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 540,
+        "y": 560,
+        "wires": [
+            [
+                "08938a259b7b6408"
+            ]
+        ]
+    },
+    {
+        "id": "590d014e72756321",
+        "type": "inject",
+        "z": "a9c4f2a75d09e103",
+        "name": "Startup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Available for Activation                           ",
+        "payloadType": "str",
+        "x": 400,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "293888ec26ab8946",
+        "type": "link in",
+        "z": "a9c4f2a75d09e103",
+        "name": "lNorthfield Single In",
+        "links": [
+            "2e28889eb752d70b"
+        ],
+        "x": 75,
+        "y": 420,
+        "wires": [
+            [
+                "f31a72353839787a"
+            ]
+        ]
+    },
+    {
+        "id": "fc0860b01b8f349c",
+        "type": "link out",
+        "z": "a9c4f2a75d09e103",
+        "name": "Northfield Single Button",
+        "mode": "link",
+        "links": [
+            "23702c3fc6f4cb32"
+        ],
+        "x": 425,
+        "y": 260,
+        "wires": []
     },
     {
         "id": "3e94ec3eb3e2fdb1",
@@ -3446,5 +3996,17 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "e0cc76eb223ab174",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-dashboard": "3.6.6",
+            "node-red-contrib-string": "1.0.0",
+            "node-red-contrib-unit-converter": "0.0.3",
+            "@colinl/node-red-dashboard-2-ui-gauge-classic": "1.4.0"
+        }
     }
 ]
