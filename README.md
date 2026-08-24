@@ -1,4 +1,5 @@
-nsrc-flex-scheduler
+src-flx-scheduler-node-red-project
+
 ===================
 
 Web-based scheduler/dashboard for remotely activating access to a set of shared amateur radio stations. Built with Node-RED and Node-RED Dashboard.
@@ -40,9 +41,6 @@ Defined in `package.json`:
 - `node-red-contrib-string` — string parsing (e.g. extracting IP addresses)
 - `node-red-contrib-unit-converter` — unit conversion used by the monitoring gauges
 
-### Notes
-
-The flow also contains a couple of empty/placeholder tabs ("Flow 1", "Flow 2") left over from development, which can be cleaned up or repurposed.
 
 ### Relationship to the club's PHP site
 
