@@ -880,7 +880,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "15",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -891,7 +891,7 @@
         "y": 160,
         "wires": [
             [
-                "3be391041d79a54c"
+                "eb28ef3c285308d8"
             ]
         ]
     },
@@ -983,7 +983,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "15",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -994,7 +994,7 @@
         "y": 100,
         "wires": [
             [
-                "7e2f34c5deb3720d"
+                "8457c609f2966239"
             ]
         ]
     },
@@ -1145,33 +1145,6 @@
         ]
     },
     {
-        "id": "808038ec6376329c",
-        "type": "inject",
-        "z": "f2640a39539df39d",
-        "name": "Startup",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Available for Activation                           ",
-        "payloadType": "str",
-        "x": 520,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "e3248e65c388861e",
         "type": "mqtt in",
         "z": "f2640a39539df39d",
@@ -1235,7 +1208,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "15",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -1246,7 +1219,7 @@
         "y": 60,
         "wires": [
             [
-                "d22b601cf3cac1be"
+                "15e1b40411977614"
             ]
         ]
     },
@@ -1461,7 +1434,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "15",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -1472,7 +1445,7 @@
         "y": 114,
         "wires": [
             [
-                "c4ef06d5b2afe277"
+                "56a5f6352e16c1ed"
             ]
         ]
     },
@@ -1623,39 +1596,10 @@
         ]
     },
     {
-        "id": "7c1a4fee7f72583a",
-        "type": "inject",
-        "z": "9b10ae1da2b9c2a4",
-        "name": "Startup",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Available for Activation                           ",
-        "payloadType": "str",
-        "x": 500,
-        "y": 400,
-        "wires": [
-            [
-                "c4ef06d5b2afe277"
-            ]
-        ]
-    },
-    {
         "id": "01b911e1ad6b2cfd",
         "type": "mqtt in",
         "z": "9b10ae1da2b9c2a4",
-        "name": "MunEndfed/recv",
+        "name": "",
         "topic": "Northfield/recv",
         "qos": "2",
         "datatype": "auto",
@@ -1819,7 +1763,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "15",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -1830,7 +1774,7 @@
         "y": 220,
         "wires": [
             [
-                "e52dd9222a4b0da0"
+                "7738be9bff641042"
             ]
         ]
     },
@@ -2109,7 +2053,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "15",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -2120,7 +2064,7 @@
         "y": 240,
         "wires": [
             [
-                "a25371953e9612ca"
+                "30dd9dd9f886093e"
             ]
         ]
     },
@@ -2381,7 +2325,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "15",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -2392,7 +2336,7 @@
         "y": 320,
         "wires": [
             [
-                "cfe5a9a5423d6a91"
+                "1cb90ff57f0a7b6e"
             ]
         ]
     },
@@ -2532,7 +2476,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "15",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -2543,7 +2487,7 @@
         "y": 160,
         "wires": [
             [
-                "1a29f9f46b3f95d4"
+                "1e192744e8800161"
             ]
         ]
     },
@@ -2928,7 +2872,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "15",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -2939,7 +2883,7 @@
         "y": 160,
         "wires": [
             [
-                "11ccb30ac8ebd752"
+                "fa11028efbfd6f19"
             ]
         ]
     },
@@ -3120,7 +3064,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "15",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -3131,7 +3075,7 @@
         "y": 200,
         "wires": [
             [
-                "08938a259b7b6408"
+                "70bc6e3d02e2fd50"
             ]
         ]
     },
@@ -3259,33 +3203,6 @@
             [
                 "08938a259b7b6408"
             ]
-        ]
-    },
-    {
-        "id": "590d014e72756321",
-        "type": "inject",
-        "z": "a9c4f2a75d09e103",
-        "name": "Startup",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Available for Activation                           ",
-        "payloadType": "str",
-        "x": 400,
-        "y": 640,
-        "wires": [
-            []
         ]
     },
     {
@@ -3438,7 +3355,7 @@
         "type": "function",
         "z": "a0bd36790f71e656",
         "name": "",
-        "func": "\n\n// @ts-nocheck\n/**\n * Node-RED Function: Extract disk USED percent from `df -h` output\n *\n * Input:\n *   msg.payload = full text output of `df -h`\n *\n * Output:\n *   msg.payload = <number>   // percent used (e.g., 64)\n *\n * Default behavior:\n *   - returns Use% for the root filesystem mounted on \"/\"\n *\n * Notes:\n *   - Handles 1–3 digit percentages (0%..100%)\n *   - Avoids accidentally grabbing the first 2-digit percent from some other mount\n */\n\nconst text = (msg.payload ?? \"\").toString();\nconst lines = text.split(/\\r?\\n/).map(l => l.trim()).filter(Boolean);\n\n// Choose which mount you want; \"/\" is most common.\nconst TARGET_MOUNT = \"/\";\n\nfor (const line of lines) {\n    // Match lines that end with the mount point (e.g., \"... 64% /\")\n    // Use whitespace before mount to avoid matching \"/boot/firmware\" when TARGET_MOUNT is \"/\"\n    const mountRe = new RegExp(`\\\\s${TARGET_MOUNT.replace(/[.*+?^${}()|[\\]\\\\]/g, \"\\\\$&\")}$`);\n    if (!mountRe.test(line)) continue;\n\n    // Extract Use% (first occurrence of N% on that line)\n    const m = line.match(/(\\d{1,3})%/);\n    if (m) {\n        msg.payload = Number(m[1]); // disk USED percent\n        return msg;\n    }\n}\n\n// If we didn't find the target mount, fall back to first percentage found (optional)\n// Comment out this block if you'd rather output null on failure.\nconst fallback = text.match(/(\\d{1,3})%/);\nif (fallback) {\n    msg.payload = Number(fallback[1]);\n    return msg;\n}\n\nmsg.payload = null;\nreturn msg;\n",
+        "func": "\n\n// @ts-nocheck\n/**\n * Node-RED Function: Extract disk USED percent from `df -h` output\n *\n * Input:\n *   msg.payload = full text output of `df -h`\n *\n * Output:\n *   msg.payload = <number>   // percent used (e.g., 64)\n *\n * Default behavior:\n *   - returns Use% for the root filesystem mounted on \"/\"\n *\n * Notes:\n *   - Handles 1\u20133 digit percentages (0%..100%)\n *   - Avoids accidentally grabbing the first 2-digit percent from some other mount\n */\n\nconst text = (msg.payload ?? \"\").toString();\nconst lines = text.split(/\\r?\\n/).map(l => l.trim()).filter(Boolean);\n\n// Choose which mount you want; \"/\" is most common.\nconst TARGET_MOUNT = \"/\";\n\nfor (const line of lines) {\n    // Match lines that end with the mount point (e.g., \"... 64% /\")\n    // Use whitespace before mount to avoid matching \"/boot/firmware\" when TARGET_MOUNT is \"/\"\n    const mountRe = new RegExp(`\\\\s${TARGET_MOUNT.replace(/[.*+?^${}()|[\\]\\\\]/g, \"\\\\$&\")}$`);\n    if (!mountRe.test(line)) continue;\n\n    // Extract Use% (first occurrence of N% on that line)\n    const m = line.match(/(\\d{1,3})%/);\n    if (m) {\n        msg.payload = Number(m[1]); // disk USED percent\n        return msg;\n    }\n}\n\n// If we didn't find the target mount, fall back to first percentage found (optional)\n// Comment out this block if you'd rather output null on failure.\nconst fallback = text.match(/(\\d{1,3})%/);\nif (fallback) {\n    msg.payload = Number(fallback[1]);\n    return msg;\n}\n\nmsg.payload = null;\nreturn msg;\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -3668,7 +3585,7 @@
         "type": "function",
         "z": "a0bd36790f71e656",
         "name": "IP Address Sparce",
-        "func": "\n// @ts-nocheck\n/**\n * Node-RED Function: Extract first two IPv4 addresses from a string\n *\n * Input:\n *   msg.payload (string) e.g.\n *   \"192.168.70.116 100.79.140.14 fd54:... fd7a:...\"\n *\n * Output:\n *   msg.payload = {\n *     ipv4_1: \"192.168.70.116\",\n *     ipv4_2: \"100.79.140.14\"\n *   }\n *\n * Notes:\n * - Uses an IPv4 regex where each octet is 1–3 digits (as requested).\n * - Discards the rest (IPv6, etc.).\n * - If fewer than 2 IPv4s are found, missing fields are omitted.\n */\n\n// Ensure we have a string to parse\nconst s = (msg.payload ?? \"\").toString();\n\n// IPv4 pattern: 4 groups of 1–3 digits separated by dots\n// (Not validating 0–255 ranges since you asked for 1–3 digit octets.)\nconst IPV4_RE = /\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b/g;\n\nconst matches = s.match(IPV4_RE) || [];\n\nconst out = {};\nif (matches[0]) out.ipv4_1 = matches[0];\nif (matches[1]) out.ipv4_2 = matches[1];\n\n// Put only the parsed IPv4s on msg.payload\nmsg.payload = out;\n\nreturn msg;\n",
+        "func": "\n// @ts-nocheck\n/**\n * Node-RED Function: Extract first two IPv4 addresses from a string\n *\n * Input:\n *   msg.payload (string) e.g.\n *   \"192.168.70.116 100.79.140.14 fd54:... fd7a:...\"\n *\n * Output:\n *   msg.payload = {\n *     ipv4_1: \"192.168.70.116\",\n *     ipv4_2: \"100.79.140.14\"\n *   }\n *\n * Notes:\n * - Uses an IPv4 regex where each octet is 1\u20133 digits (as requested).\n * - Discards the rest (IPv6, etc.).\n * - If fewer than 2 IPv4s are found, missing fields are omitted.\n */\n\n// Ensure we have a string to parse\nconst s = (msg.payload ?? \"\").toString();\n\n// IPv4 pattern: 4 groups of 1\u20133 digits separated by dots\n// (Not validating 0\u2013255 ranges since you asked for 1\u20133 digit octets.)\nconst IPV4_RE = /\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b/g;\n\nconst matches = s.match(IPV4_RE) || [];\n\nconst out = {};\nif (matches[0]) out.ipv4_1 = matches[0];\nif (matches[1]) out.ipv4_2 = matches[1];\n\n// Put only the parsed IPv4s on msg.payload\nmsg.payload = out;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3814,8 +3731,8 @@
         "minor_division": "5",
         "value_decimal_places": 1,
         "scale_decimal_places": 0,
-        "label": "TEMPERATURE °F",
-        "measurement": "°F",
+        "label": "TEMPERATURE \u00b0F",
+        "measurement": "\u00b0F",
         "units": "",
         "needles": [
             {
@@ -3998,7 +3915,7 @@
         ]
     },
     {
-        "id": "e0cc76eb223ab174",
+        "id": "c0b0e593c9f9386c",
         "type": "global-config",
         "env": [],
         "modules": {
@@ -4008,5 +3925,425 @@
             "node-red-contrib-unit-converter": "0.0.3",
             "@colinl/node-red-dashboard-2-ui-gauge-classic": "1.4.0"
         }
+    },
+    {
+        "id": "eb28ef3c285308d8",
+        "type": "exec",
+        "z": "52514ed31cfbdeca",
+        "command": "sqlite3 -json /var/www/html/db/nsrc_flex.db \"SELECT COALESCE(u.call_sign, r.call_sign_snapshot) AS call_sign FROM reservations r JOIN radios ra ON ra.id = r.radio_id LEFT JOIN users u ON u.id = r.user_id WHERE ra.name = 'MunEndfed' AND r.start_time <= datetime('now','localtime') AND r.end_time > datetime('now','localtime') LIMIT 1;\"",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Check MunEndfed Reservation",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "fef42fe819695b44"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fef42fe819695b44",
+        "type": "function",
+        "z": "52514ed31cfbdeca",
+        "name": "Format Reservation Status",
+        "func": "var out = (msg.payload || '').toString().trim();\nvar reservedBy = null;\ntry {\n    var rows = JSON.parse(out || '[]');\n    if (rows.length && rows[0].call_sign) {\n        reservedBy = rows[0].call_sign;\n    }\n} catch (e) {\n    node.warn('Could not parse sqlite output: ' + out);\n}\n\nif (reservedBy) {\n    msg.payload = 'Radio is currently reserved by ' + reservedBy;\n} else {\n    msg.payload = 'Available for Activation';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "3be391041d79a54c"
+            ]
+        ]
+    },
+    {
+        "id": "8457c609f2966239",
+        "type": "exec",
+        "z": "f2640a39539df39d",
+        "command": "sqlite3 -json /var/www/html/db/nsrc_flex.db \"SELECT COALESCE(u.call_sign, r.call_sign_snapshot) AS call_sign FROM reservations r JOIN radios ra ON ra.id = r.radio_id LEFT JOIN users u ON u.id = r.user_id WHERE ra.name = 'Skokie' AND r.start_time <= datetime('now','localtime') AND r.end_time > datetime('now','localtime') LIMIT 1;\"",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Check Skokie Reservation",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "ad22a56c7ebc29cd"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ad22a56c7ebc29cd",
+        "type": "function",
+        "z": "f2640a39539df39d",
+        "name": "Format Reservation Status",
+        "func": "var out = (msg.payload || '').toString().trim();\nvar reservedBy = null;\ntry {\n    var rows = JSON.parse(out || '[]');\n    if (rows.length && rows[0].call_sign) {\n        reservedBy = rows[0].call_sign;\n    }\n} catch (e) {\n    node.warn('Could not parse sqlite output: ' + out);\n}\n\nif (reservedBy) {\n    msg.payload = 'Radio is currently reserved by ' + reservedBy;\n} else {\n    msg.payload = 'Available for Activation';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "7e2f34c5deb3720d"
+            ]
+        ]
+    },
+    {
+        "id": "15e1b40411977614",
+        "type": "exec",
+        "z": "fd9a9d818b5e50e9",
+        "command": "sqlite3 -json /var/www/html/db/nsrc_flex.db \"SELECT COALESCE(u.call_sign, r.call_sign_snapshot) AS call_sign FROM reservations r JOIN radios ra ON ra.id = r.radio_id LEFT JOIN users u ON u.id = r.user_id WHERE ra.name = 'Northbrook' AND r.start_time <= datetime('now','localtime') AND r.end_time > datetime('now','localtime') LIMIT 1;\"",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Check Northbrook Reservation",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "5a636bec8c32ac71"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5a636bec8c32ac71",
+        "type": "function",
+        "z": "fd9a9d818b5e50e9",
+        "name": "Format Reservation Status",
+        "func": "var out = (msg.payload || '').toString().trim();\nvar reservedBy = null;\ntry {\n    var rows = JSON.parse(out || '[]');\n    if (rows.length && rows[0].call_sign) {\n        reservedBy = rows[0].call_sign;\n    }\n} catch (e) {\n    node.warn('Could not parse sqlite output: ' + out);\n}\n\nif (reservedBy) {\n    msg.payload = 'Radio is currently reserved by ' + reservedBy;\n} else {\n    msg.payload = 'Available for Activation';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "d22b601cf3cac1be"
+            ]
+        ]
+    },
+    {
+        "id": "56a5f6352e16c1ed",
+        "type": "exec",
+        "z": "9b10ae1da2b9c2a4",
+        "command": "sqlite3 -json /var/www/html/db/nsrc_flex.db \"SELECT COALESCE(u.call_sign, r.call_sign_snapshot) AS call_sign FROM reservations r JOIN radios ra ON ra.id = r.radio_id LEFT JOIN users u ON u.id = r.user_id WHERE ra.name = 'Northfield' AND r.start_time <= datetime('now','localtime') AND r.end_time > datetime('now','localtime') LIMIT 1;\"",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Check Northfield Reservation",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "79ebad5debfd23e1"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "79ebad5debfd23e1",
+        "type": "function",
+        "z": "9b10ae1da2b9c2a4",
+        "name": "Format Reservation Status",
+        "func": "var out = (msg.payload || '').toString().trim();\nvar reservedBy = null;\ntry {\n    var rows = JSON.parse(out || '[]');\n    if (rows.length && rows[0].call_sign) {\n        reservedBy = rows[0].call_sign;\n    }\n} catch (e) {\n    node.warn('Could not parse sqlite output: ' + out);\n}\n\nif (reservedBy) {\n    msg.payload = 'Radio is currently reserved by ' + reservedBy;\n} else {\n    msg.payload = 'Available for Activation';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "c4ef06d5b2afe277"
+            ]
+        ]
+    },
+    {
+        "id": "7738be9bff641042",
+        "type": "exec",
+        "z": "fb245b14c25e1736",
+        "command": "sqlite3 -json /var/www/html/db/nsrc_flex.db \"SELECT COALESCE(u.call_sign, r.call_sign_snapshot) AS call_sign FROM reservations r JOIN radios ra ON ra.id = r.radio_id LEFT JOIN users u ON u.id = r.user_id WHERE ra.name = 'MunAV640' AND r.start_time <= datetime('now','localtime') AND r.end_time > datetime('now','localtime') LIMIT 1;\"",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Check MunAV640 Reservation",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "6fdf577c96eecdd9"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6fdf577c96eecdd9",
+        "type": "function",
+        "z": "fb245b14c25e1736",
+        "name": "Format Reservation Status",
+        "func": "var out = (msg.payload || '').toString().trim();\nvar reservedBy = null;\ntry {\n    var rows = JSON.parse(out || '[]');\n    if (rows.length && rows[0].call_sign) {\n        reservedBy = rows[0].call_sign;\n    }\n} catch (e) {\n    node.warn('Could not parse sqlite output: ' + out);\n}\n\nif (reservedBy) {\n    msg.payload = 'Radio is currently reserved by ' + reservedBy;\n} else {\n    msg.payload = 'Available for Activation';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "e52dd9222a4b0da0"
+            ]
+        ]
+    },
+    {
+        "id": "30dd9dd9f886093e",
+        "type": "exec",
+        "z": "1a833e7e556e099d",
+        "command": "sqlite3 -json /var/www/html/db/nsrc_flex.db \"SELECT COALESCE(u.call_sign, r.call_sign_snapshot) AS call_sign FROM reservations r JOIN radios ra ON ra.id = r.radio_id LEFT JOIN users u ON u.id = r.user_id WHERE ra.name = 'MunEndfed' AND r.start_time <= datetime('now','localtime') AND r.end_time > datetime('now','localtime') LIMIT 1;\"",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Check MunEndfed Reservation",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "713fd07a1094bbf9"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "713fd07a1094bbf9",
+        "type": "function",
+        "z": "1a833e7e556e099d",
+        "name": "Format Reservation Status",
+        "func": "var out = (msg.payload || '').toString().trim();\nvar reservedBy = null;\ntry {\n    var rows = JSON.parse(out || '[]');\n    if (rows.length && rows[0].call_sign) {\n        reservedBy = rows[0].call_sign;\n    }\n} catch (e) {\n    node.warn('Could not parse sqlite output: ' + out);\n}\n\nif (reservedBy) {\n    msg.payload = 'Radio is currently reserved by ' + reservedBy;\n} else {\n    msg.payload = 'Available for Activation';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "a25371953e9612ca"
+            ]
+        ]
+    },
+    {
+        "id": "1cb90ff57f0a7b6e",
+        "type": "exec",
+        "z": "246d5812a8bb8b85",
+        "command": "sqlite3 -json /var/www/html/db/nsrc_flex.db \"SELECT COALESCE(u.call_sign, r.call_sign_snapshot) AS call_sign FROM reservations r JOIN radios ra ON ra.id = r.radio_id LEFT JOIN users u ON u.id = r.user_id WHERE ra.name = 'MunAV640' AND r.start_time <= datetime('now','localtime') AND r.end_time > datetime('now','localtime') LIMIT 1;\"",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Check MunAV640 Reservation",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "b94399917dd7ec9a"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b94399917dd7ec9a",
+        "type": "function",
+        "z": "246d5812a8bb8b85",
+        "name": "Format Reservation Status",
+        "func": "var out = (msg.payload || '').toString().trim();\nvar reservedBy = null;\ntry {\n    var rows = JSON.parse(out || '[]');\n    if (rows.length && rows[0].call_sign) {\n        reservedBy = rows[0].call_sign;\n    }\n} catch (e) {\n    node.warn('Could not parse sqlite output: ' + out);\n}\n\nif (reservedBy) {\n    msg.payload = 'Radio is currently reserved by ' + reservedBy;\n} else {\n    msg.payload = 'Available for Activation';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "cfe5a9a5423d6a91"
+            ]
+        ]
+    },
+    {
+        "id": "1e192744e8800161",
+        "type": "exec",
+        "z": "fbd64501e7d55f1f",
+        "command": "sqlite3 -json /var/www/html/db/nsrc_flex.db \"SELECT COALESCE(u.call_sign, r.call_sign_snapshot) AS call_sign FROM reservations r JOIN radios ra ON ra.id = r.radio_id LEFT JOIN users u ON u.id = r.user_id WHERE ra.name = 'Skokie' AND r.start_time <= datetime('now','localtime') AND r.end_time > datetime('now','localtime') LIMIT 1;\"",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Check Skokie Reservation",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "960ae43b89bedcee"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "960ae43b89bedcee",
+        "type": "function",
+        "z": "fbd64501e7d55f1f",
+        "name": "Format Reservation Status",
+        "func": "var out = (msg.payload || '').toString().trim();\nvar reservedBy = null;\ntry {\n    var rows = JSON.parse(out || '[]');\n    if (rows.length && rows[0].call_sign) {\n        reservedBy = rows[0].call_sign;\n    }\n} catch (e) {\n    node.warn('Could not parse sqlite output: ' + out);\n}\n\nif (reservedBy) {\n    msg.payload = 'Radio is currently reserved by ' + reservedBy;\n} else {\n    msg.payload = 'Available for Activation';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "1a29f9f46b3f95d4"
+            ]
+        ]
+    },
+    {
+        "id": "fa11028efbfd6f19",
+        "type": "exec",
+        "z": "2e5af763d4b55869",
+        "command": "sqlite3 -json /var/www/html/db/nsrc_flex.db \"SELECT COALESCE(u.call_sign, r.call_sign_snapshot) AS call_sign FROM reservations r JOIN radios ra ON ra.id = r.radio_id LEFT JOIN users u ON u.id = r.user_id WHERE ra.name = 'Northbrook' AND r.start_time <= datetime('now','localtime') AND r.end_time > datetime('now','localtime') LIMIT 1;\"",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Check Northbrook Reservation",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "83329a3406694e20"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "83329a3406694e20",
+        "type": "function",
+        "z": "2e5af763d4b55869",
+        "name": "Format Reservation Status",
+        "func": "var out = (msg.payload || '').toString().trim();\nvar reservedBy = null;\ntry {\n    var rows = JSON.parse(out || '[]');\n    if (rows.length && rows[0].call_sign) {\n        reservedBy = rows[0].call_sign;\n    }\n} catch (e) {\n    node.warn('Could not parse sqlite output: ' + out);\n}\n\nif (reservedBy) {\n    msg.payload = 'Radio is currently reserved by ' + reservedBy;\n} else {\n    msg.payload = 'Available for Activation';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "11ccb30ac8ebd752"
+            ]
+        ]
+    },
+    {
+        "id": "70bc6e3d02e2fd50",
+        "type": "exec",
+        "z": "a9c4f2a75d09e103",
+        "command": "sqlite3 -json /var/www/html/db/nsrc_flex.db \"SELECT COALESCE(u.call_sign, r.call_sign_snapshot) AS call_sign FROM reservations r JOIN radios ra ON ra.id = r.radio_id LEFT JOIN users u ON u.id = r.user_id WHERE ra.name = 'Northfield' AND r.start_time <= datetime('now','localtime') AND r.end_time > datetime('now','localtime') LIMIT 1;\"",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Check Northfield Reservation",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "0267fd146a33fbbc"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0267fd146a33fbbc",
+        "type": "function",
+        "z": "a9c4f2a75d09e103",
+        "name": "Format Reservation Status",
+        "func": "var out = (msg.payload || '').toString().trim();\nvar reservedBy = null;\ntry {\n    var rows = JSON.parse(out || '[]');\n    if (rows.length && rows[0].call_sign) {\n        reservedBy = rows[0].call_sign;\n    }\n} catch (e) {\n    node.warn('Could not parse sqlite output: ' + out);\n}\n\nif (reservedBy) {\n    msg.payload = 'Radio is currently reserved by ' + reservedBy;\n} else {\n    msg.payload = 'Available for Activation';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "08938a259b7b6408"
+            ]
+        ]
     }
 ]
